@@ -31,7 +31,7 @@ public class Reverse_and_Palindrome {
         System.out.println("Enter a number");
         int n = gb.nextInt();
         boolean res = isPalindrome(n);
-        if(res==true)
+        if(res)
             System.out.println(n+" is palindrome.");
         else
             System.out.println(n+" is not palindrome.");

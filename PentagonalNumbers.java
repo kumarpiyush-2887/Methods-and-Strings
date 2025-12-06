@@ -10,8 +10,8 @@ with 10 numbers on each line.
 
 public class PentagonalNumbers {
     public static int getPentagonalNumber(int n){
-    int num = n*(3*n-1)/2;
-    return num;
+        int num = n*(3*n-1)/2;
+        return num;
     }   
     public static void main(String[] args) {
         System.out.println("Pentagonal numbers are:");

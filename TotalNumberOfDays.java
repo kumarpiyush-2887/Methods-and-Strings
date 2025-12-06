@@ -12,11 +12,10 @@ public class TotalNumberOfDays {
     }
 
     public static void main(String[] args) {
-        int sum = 0;
+        System.out.println("Year\tDays");
         for(int i=2000;i<=2020;i++){
             int days = numberOfDaysInAYear(i);
-            sum+=days;
+            System.out.println(i+"\t"+days);
         }
-        System.out.println("The total number of days from 2000 to 2020 is: "+sum);
     }
 }
