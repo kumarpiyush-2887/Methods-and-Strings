@@ -32,8 +32,8 @@ public class FriendlyPairs {
     }
 
     public static boolean isFriendlyPair(int a, int b){
-        double ratio1 = a/sumOfDivisors(a);
-        double ratio2 = b/sumOfDivisors(b);
+        double ratio1 = a*1.0/sumOfDivisors(a);
+        double ratio2 = b*1.0/sumOfDivisors(b);
         if(ratio1==ratio2)
             return true;
         else

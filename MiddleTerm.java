@@ -13,17 +13,17 @@ Expected Output:
 The middle character in the string: V     */
 import java.util.*;
 public class MiddleTerm {
-    public static void showMiddleTerm(String str){
+    public static char findMiddleTerm(String str){
         int l = str.length();
         int mt=l/2 + 1;
-        System.out.println("Middle term of "+str+" is: "+str.charAt(mt-1));
-        return;
+        return str.charAt(mt-1);
     }
     public static void main(String[] args) {
         Scanner gb = new Scanner(System.in);
-        System.out.println("Enter a string:");
+        System.out.println("Input a string:");
         String str = gb.nextLine();
-        showMiddleTerm(str);
+        char ch= findMiddleTerm(str);
+        System.out.println("Middle character in the string: "+ch);
         gb.close();
     }
 }

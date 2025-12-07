@@ -12,7 +12,7 @@ public class CountWordsInString {
         int words=0;
         for(int i=0;i<l;i++){
             char ch = str.charAt(i);
-            if(ch==' ')
+            if(ch==32)
                 words++;
         }
         return words+1;

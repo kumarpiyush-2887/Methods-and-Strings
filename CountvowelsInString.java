@@ -20,7 +20,7 @@ public class CountvowelsInString {
         System.out.println("Enter a string:");
         String str = gb.nextLine();
         int vowels = count(str);
-        System.out.println("Number of vowels in "+str+" is: "+vowels);
+        System.out.println("Number of vowels in \""+str+"\" is: "+vowels);
         gb.close();
     }
 }
