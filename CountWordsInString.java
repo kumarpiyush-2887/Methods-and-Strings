@@ -7,15 +7,21 @@ Number of words in the string: 9 */
 import java.util.*;
 public class CountWordsInString {
     public static int countWords(String str){
-        str = str.trim();
-        int l = str.length();
-        int words=0;
-        for(int i=0;i<l;i++){
+        int c = 0;
+        boolean inWord = false;
+        for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-            if(ch==32)
-                words++;
+            if(ch!=32){
+                if(!inWord){
+                    c++;
+                    inWord = true;
+                }
+            }
+            else{
+                inWord = false;
+            }
         }
-        return words+1;
+        return c;
     }
     public static void main(String[] args) {
         Scanner gb = new Scanner(System.in);

@@ -15,14 +15,18 @@ Example:
 import java.util.*;
 public class PalindromeString {
     public static boolean isPalindrome(String str){
-        String rev="";
-        for(int i=0;i<str.length();i++){
-            rev = str.charAt(i)+rev;
+        int left = 0;
+        int right = str.length()-1;
+        while(left<right){
+            if(str.charAt(left)!=str.charAt(right)){
+                return false;
+            }
+            else{
+                left++;
+                right--;
+            }
         }
-        if(str.equals(rev))
-            return true;
-        else
-            return false;
+        return true;
     }
     public static void main(String[] args) {
         Scanner gb = new Scanner(System.in);

@@ -47,7 +47,7 @@ public class Overloading_volume {
                 case 1:
                     System.out.println("Enter side of cube.");
                     int s = gb.nextInt();
-                    System.out.println("Volume of square is: "+volume(s));
+                    System.out.println("Volume of cube is: "+volume(s));
                     break;
 
                 case 2:
@@ -55,7 +55,7 @@ public class Overloading_volume {
                     double l = gb.nextDouble();
                     double b = gb.nextDouble();
                     double h = gb.nextDouble();
-                    System.out.println("Volume of Rectangle is: "+volume(l,b,h));
+                    System.out.println("Volume of cuboid is: "+volume(l,b,h));
                     break;
 
                 case 3:

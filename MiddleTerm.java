@@ -15,8 +15,8 @@ import java.util.*;
 public class MiddleTerm {
     public static char findMiddleTerm(String str){
         int l = str.length();
-        int mt=l/2 + 1;
-        return str.charAt(mt-1);
+        int mt=l/2;
+        return str.charAt(mt);
     }
     public static void main(String[] args) {
         Scanner gb = new Scanner(System.in);
