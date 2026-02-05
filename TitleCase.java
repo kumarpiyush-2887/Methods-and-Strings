@@ -15,14 +15,20 @@ import java.util.*;
 public class TitleCase {
     public static String toTitleCase(String str){
         str = str.trim();
+        boolean startOfWord = true;
         String newStr = "";
         for(int i=0;i<str.length();i++){
             char ch = str.charAt(i);
-            if(i==0 || str.charAt(i-1)==32){
-                if(ch>=97 && ch<=122)
-                    ch = (char)(ch-32);
+            if(startOfWord && Character.isLetter(ch)){
+                newStr = newStr + Character.toUpperCase(ch);
+                startOfWord = false;
             }
-            newStr+=ch;
+            else{
+                newStr = newStr + ch;
+            }
+            if(ch==32){
+                startOfWord = true;
+            }
         }
         return newStr;
     }

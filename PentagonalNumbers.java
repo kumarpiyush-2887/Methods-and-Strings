@@ -19,7 +19,7 @@ public class PentagonalNumbers {
             int pn = getPentagonalNumber(i);
             if((i-1)%10==0)
                 System.out.println();
-            System.out.print(pn+" ");
+            System.out.print(pn+"\t");
         }
     }
 }
